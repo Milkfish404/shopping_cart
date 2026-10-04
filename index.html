@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <nav>
+        <h3><span style="font-size: 2rem;">🍔</span>BURGER GRILL</h3>
+        <h2 style="color: yellow;">This is a simple functioning shop cart</h4>
+        <button id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+    </nav>
+
+    <div class="shop-container">
+        <div class="products">
+                <div class="product">
+                    <div class="quantities-title">
+                        <h3 class="product_name">Big Bite</h3>
+                    </div>
+                    <img class="product_img" src="burgers/cheese_burger1.png" alt="product_image">
+                    <div class="money-details">
+                        <p class="price">$70.00</p>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="quantities-title">
+                        <h3 class="product_name">Cheezy Pizza</h3>
+                    </div>
+                    <img class="product_img" src="burgers/pizza.png" alt="product_image">
+                    <div class="money-details">
+                        <p class="price">$120.00</p>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="quantities-title">
+                        <h3 class="product_name">Fries Mac</h3>
+                    </div>
+                    <img class="product_img" src="burgers/fries.png" alt="product_image">
+                    <div class="money-details">
+                        <p class="price">$40.00</p>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="quantities-title">
+                        <h3 class="product_name">Chicken Bucket</h3>
+                    </div>
+                    <img class="product_img" src="burgers/bucket chicken.png" alt="product_image">
+                    <div class="money-details">
+                        <p class="price">$120.00</p>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="quantities-title">
+                        <h3 class="product_name">Fries Mac</h3>
+                    </div>
+                    <img class="product_img" src="burgers/fries.png" alt="product_image">
+                    <div class="money-details">
+                        <p class="price">$40.00</p>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="quantities-title">
+                        <h3 class="product_name">Big Bite</h3>
+                    </div>
+                    <img class="product_img" src="burgers/cheese_burger1.png" alt="product_image">
+                    <div class="money-details">
+                        <p class="price">$70.00</p>
+                        <button class="buy">Buy</button>
+                    </div>
+                </div>
+    </div>
+    <div class="shopping-cart">
+        <h2 class="shopping-title">Shopping Cart</h2>
+        <div class="cart-products">
+            <div class="stored-product">
+                <div class="left">
+                    <img id="stored-img" src="" alt="image">
+                    <p class="stored-price">[price num]</p>
+                </div>
+                <div class="middle">
+                    <h3 id="stored-name">[name]</h3><br>
+                    <div class="quantity">
+                        <button class="quantity_btn" id="decrease_btn">-</button>
+                        <p id="quantity_num">1</p>
+                        <button class="quantity_btn" id="increase_btn">+</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <button class="btn"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="order-summary">
+            <div id="line"></div>
+            <div class="transaction">
+                <div class="transact-titles">
+                    <p class="transact-text">Subtotal</p> 
+                    <p class="transact-text">Delivery Fee</p>
+                    <h1 class="transact-text">Total</h1>
+                </div>
+                <div class="transact-values">
+                    <p id="subtotal-fee" class="transact-text">$0.00</p>
+                    <p id="delivery-fee" class="transact-text">$7.00+</p>
+                    <p id="total-fee" class="transact-text">$0.00</p>
+                </div>
+            </div>
+            <button id="Checkout">Checkout</button>
+        </div>
+    </div>
+</body>
+</html>
